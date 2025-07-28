@@ -1,0 +1,134 @@
+*{
+    margin:0 ;
+    padding:0 ; 
+}
+
+.container{
+    background:linear-gradient(rgba(0, 0, 0, 0.915) , rgba(128, 0, 107, 0.132)) ,url("mahadev.jpg"); 
+    background-repeat:no-repeat; 
+    background-size:cover;
+    min-height:100vh ; 
+    box-sizing: border-box;
+
+}
+
+
+
+.shiva{
+    margin-bottom:11em;
+    display:flex; 
+}
+
+
+li{
+    display: inline-block;
+    color:white; 
+    font-size:30px; 
+}
+
+.shiva ul li{
+    color:white;  
+    font-weight:bold; 
+    position :relative ; 
+}
+.shiva ul li a{
+    color:white ; 
+    text-decoration: none;
+}
+.shiva ul li::after{
+    content:' '; 
+    position:absolute ;
+    left:0; 
+    bottom:-10px ; 
+    height:3px ; 
+    background-color:white; 
+    width:0%; 
+    transition:0.5s ; 
+}
+
+.shiva ul li:hover::after{
+    width:100% ; 
+
+}
+
+.items{
+    width:100% ; 
+    display: flex;
+    justify-content: space-around;
+}
+.about-me{
+    display:flex ; 
+    gap:4rem;  
+    justify-content: space-evenly;
+}
+.me{
+    display:flex; 
+    background-color: transparent;
+    gap:7em ;
+    width:40% ; 
+    box-sizing:border-box ; 
+    justify-content:center; 
+}
+
+img{
+    border-radius:50% ; 
+    height:350px ; 
+    width:230px;  ; 
+    box-shadow: 0px 0px 20px 5px green;
+    transition:0.5s; 
+}
+
+img:hover{
+    box-shadow:0 0 60px 10px orangered ; 
+}
+
+.info{
+    display:flex ; 
+    justify-content: center;
+    background-color: transparent; 
+    gap:2em ; 
+    width:40%; 
+    box-sizing:border-box;
+    align-items: center;
+    border:3px solid aqua ; 
+    border-radius:30px ;
+}
+
+p{
+    margin:20px ;
+    font-size:35px;  
+    color:white ; 
+    font-weight:bolder;  
+}
+
+
+/* below is using media queries for making responsive for mobile */
+
+@media (min-width:600px) and (max-width:900px){
+
+
+    .about-me{
+        flex-direction:column ; 
+        align-items:center ; 
+        gap:2 rem ; 
+        padding:1rem ; 
+    }
+
+    .me , .info{
+        width:50% ; 
+    }
+
+    img{
+        height:250px ; 
+        width:180px ; 
+    }
+
+    .info{
+        flex-direction: column;
+        text-align:center;
+    }
+
+    p{
+        font-size:24px ; 
+    }
+}
