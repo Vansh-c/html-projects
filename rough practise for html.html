@@ -1,0 +1,156 @@
+<!-- this is to understand practical utility  regarding how javascript  works -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- javascript is a  scripting language, scripting language means how to automate task on both hardware and software basis -->
+ <!-- javascript is often written inside <script> tag  -->
+
+<!-- example 1: to demonstrate a  common example of javascript program -->
+
+<script>                                            // script tag is used to write javascript content inside
+    console.log('hello, my name is Vansh Joshi')            // console.log() is used to  print command inside javascript 
+
+    // try running this code, you will see white  page but to see what's really happening try to inspect that  given webpage
+    //  to inspect it , double click on your laptop's touchpad  and click inspect and  after wards go into console option on upper left corner of dialogue box which will appear
+
+
+  // let's us see about strings here string is often written inside quotation marks below is example
+
+  console.log('this is a string')
+  console.log('this is a string ' + ' which is made by Vansh Joshi')          // this is how one can add two strings ,this  process is also known as 'concatenation of strings'
+
+
+console.log('')
+// how to understand difference between var , let and const function in javascript
+console.log('==>lets see use of  let var and const function in javascript')
+
+var a = 'Harsh'               // var keyword tumhe a ki value change karne dega aur update(usemein kuch extra dalne dega)
+console.log(a)         // simply inspect this in browser 
+
+a = 'Vansh'                   // herer value of a is changed to Vansh
+console.log(a)               
+
+console.log(a + ' joshi')      // here we added two strings (jo cheeze do apostrophe ke beech mein likhi jae wo string hai) 
+
+
+// use of let keyword
+console.log('==>below is use of let keyword')
+
+let b = 'Har Har'                    // let keyword mein tum uska value change nhi  par usmein kuch naya jod sakte hain
+console.log(a)
+
+//b = 'Vansh'                     // uncomment this two lines , if your uncomment and run in browser you will not find error because it works only if one has block knowlege in javascript regarding let , var and const
+// console.log(a)                   // ye error dega kyunki hum iski value phirse bada nhi sakte
+
+console.log(b + ' Mahadev')         //  here also we added two strings
+
+// use of const keyword
+
+console.log('==> use of const keyword')      // const keyword mein na to tum kuch jod sakte ho nahi tum uski value change kar sakte ho
+ 
+const c = 'this is a text'
+console.log(c)
+
+// c = 'this is another text'          // here we tried changing this  text but it will give error , try uncommenting this code
+// console.log(c)
+
+console.log( c + ' adding some contnt here')       // here humne do strings to joda
+
+
+
+// let's see about numercial operators( +,-,*,/) in javascript 
+console.log('')
+console.log('==> numerical operators in javascript')
+
+let a1 = 5
+let a2 = 4
+console.log(a1 +a2)
+console.log(a1 - a2)
+console.log(a1*a2)
+console.log(a1 / a2)
+
+// exercise , try to calculate area of triange
+console.log('==> calculate area of triange')
+
+let height= 7
+let width = 8
+let area = height*width/2
+console.log(area)
+
+// if else statements in javascript
+console.log('==>lets talk about if else statement in javascript ')       
+
+// if else condition wali statement hoti hai , ye condition set karti hai
+
+//  below is example
+
+let  age = 19
+
+if(age>18){
+    console.log('you can drive car')
+}
+else{
+    console.log('you are a minor')
+}
+
+
+// sometimes we have to add more conditions hence else if is used to add more conditions
+
+let u = 9
+
+if(u>9){
+    console.log('value of u is greater than 9')
+}
+else if(u==9){
+    console.log('value of u equals to 9')
+}
+
+else{
+    console.log('value of u is less than 9')
+}
+
+
+// you can also add more conditions here , try making your calculator
+
+console.log('===> calculator')
+
+let v1 = 5
+let v2 = 15
+let v3 = 1                         // here try changing value of v3  from 1to 4 so that you can find your its addition multiplication division  and division respectively
+
+if(v3 ==1){
+    console.log('addition of v1 and v2 is ',v1+v1)
+}
+else if(v3==2){
+    console.log('difference of v1 and v2 is ',v1-v2)
+}
+
+else if(v3 ==3){
+    console.log('multiplication of v1 and v2 is ', v1*v2)
+}
+
+else if(v3==4){
+    console.log('division of v2 and v1 is', v2/v1)
+}
+else if(v3>4){
+    console.log('value of v3 must be between 1 to 4')
+}
+
+
+
+ 
+
+
+</script>
+
+
+    
+</body>
+</html>

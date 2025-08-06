@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ids and classes in html</title>
+</head>
+<body>
+     <!--  here id tag means "identifier " tag , its used to identify an element which is unique to one element only and cant be
+       used for other element -->
+       <!-- i can't give " mainBox " id to other div element as same  -->
+        <!-- lets understand style by example , say I have 100 elements and i want to give background color as red then I have 2 options like
+         I should define style for all those elements one by one which is tedious , instead its better to make " redBg" class
+         and all the properties you want to define inside redBg like I want to make my background red ,content white , want to make border of
+         2 pixel etc by defining all these thing I will add it in redbg class and this redbg class whichever element I will give that
+         element will acquire the propertues of redBg class-->
+
+         <!-- remenber that class can only be assigned to multiple element -->
+
+
+    <h3> id and class lecture</h3>
+    <div id = " mainBox" class = "redBg">
+     this is mainbox
+
+    </div>
+    <span class = "redBg"></span>
+    <!-- lets see power of emmet  -->
+     <!-- write span.redbg and press enter similarly type span#mainbox abd press enter -->
+      <!-- here "." is for class and "# " is for id -->
+     <span class="redbg"></span>
+     <span id="mainbox"></span> 
+        <!-- try typing this " div.redbg.blackborder.anotherclass" and press enter -->
+        <div class="redbg blackborder anotherclass"></div>  
+
+        <!-- note that emmet takes div as default so on typing ".blackbackground" and pressing enter we get our result -->
+         <div class="blackbackground"></div>
+
+         <!-- creating multiple elements using emmet try " span.myclass1.myclass2.myclass3" -->
+         <span class="myclass1 myclass2 myclass3">first</span>
+         <span class="myclass1 myclass2 myclass3">second</span>
+         <span class="myclass1 myclass2 myclass3">third</span>
+         <span class="myclass1 myclass2 myclass3">fourth</span>
+
+         
+
+
+
+
+
+
+
+
+</body>
+</html>

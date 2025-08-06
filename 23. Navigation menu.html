@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navigation menu</title>
+    <style>
+        .navbar{ color:violet;
+                background-color:rgb(4, 4, 248);  
+                  border-radius:4px;}
+        
+        .navbar li{ float:left;
+                    list-style: none;     /*list-style: none - it cancels floating of words on each other*/
+                    padding:3px 3px;
+                     margin:3px 3px;}
+        
+        .navbar ul{ overflow:auto;}       /*overflow:auto - it allows the background color to be showed which was'nt shown previously*/
+        
+        .navbar li a{padding:3px 3px;
+                    text-decoration: none;   /*here text decoration cencels the blue line on letters when mouse is hovered on it*/
+                    color:rgb(255, 254, 255) 
+                     }
+
+                     .navbar li a:hover{ color:red}
+        
+        .search{float:right;
+                color:white;
+            padding: 5px;
+              margin:6px;}
+
+              .navbar input{border: 2px solid black;
+                            border-radius: 4px;}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar"> 
+        <ul type="disc">
+            <li><a href = "#">home</a></li>           <!-- here text decoration will cancel the  blue line in bottom of words
+                                                           home , about,information, address -->
+            <li><a href = "#">about</a></li>
+            <li><a href = "#">information</a></li>
+            <li><a href = "#">address</a></li>
+               
+            <div class="search">
+                this is searchbox
+                <input type="search" name="search" id="search" placeholder="search here"> 
+            </div>
+        </ul>
+    </nav>
+    </header>
+
+    
+</body>
+</html>

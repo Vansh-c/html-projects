@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>row span and column span</title>
+</head>
+   <style>
+    .container{display: grid;
+            grid-template-columns: repeat(5,1fr);
+             grid-template-rows:repeat(4,1fr);
+            grid-column-gap:2em;
+            row-gap: 1em;}
+
+    .box{ border:2px solid red;
+           background-color: blueviolet;
+          padding:30px;}
+
+          /*nowl we will lwarn to use child class */
+
+          .box:first-child{
+            grid-column-start:1;   /*shortcut-   grid-column: 1/span 3*/
+            grid-column-end:3;
+
+            grid-row-start:1;      /*shortcut- grid-row: 1/span 3*/
+            grid-row-end:3;
+          }
+   </style>
+<body>
+    <div class="container">
+        <div class="box">item-1</div>
+        <div class="box">item-2</div>
+        <div class="box">item-3</div>
+        <div class="box">item-4</div>
+        <div class="box">item-5</div>
+        <div class="box">item-6</div>
+        <div class="box">item-7</div>
+        <div class="box">item-8</div>
+        <div class="box">item-8</div>
+        <div class="box">item-8</div>
+        <div class="box">item-8</div>
+        <div class="box">item-8</div>
+        <div class="box">item-8</div>
+        <div class="box">item-8</div>
+        <div class="box">item-8</div>
+
+
+    </div>
+    
+</body>
+</html>

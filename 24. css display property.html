@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Vansh's gym</title>
+    <style>
+        *{box-sizing: border-box;}
+        header {
+            margin: auto;
+            border: 2px solid red;
+              width:1200px/*header is an block element ,block element are those which take full space as width in web browser,hence here margin:auto works*/
+        }
+
+        img {
+            height: 44px;
+            width: 44px;
+            /*img tag is an inline element which means it takes space as required hence margin :auto will not work*/
+            margin: auto;
+            display: block;
+        }
+
+        h3 {
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0px;
+        }
+
+        .container{margin:0px;
+                    padding:23px;
+
+                   border:7px solid black;
+                    background-color: aqua;
+                    display :inline-block ;
+                     width:33%;
+                      }
+
+        .box{margin:auto;
+             width: 1200px;
+            }
+    </style>
+</head>
+
+<body>
+    <header class="top">
+        <img src="ichigo.png" alt="">
+        <h3> this is vansh's blog</h3>
+    </header>
+
+    <div class="box">
+    <div class="container">
+        <h4 class='heading'>heading</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum itaque optio odio officiis sapiente
+                nulla quos aliquid quia odit? Temporibus ut dolore, consequuntur vitae debitis ipsum illo sed, similique
+                quam magnam inventore rem cum.</p>
+        
+    </div>
+
+    <div class="container">
+        <h4 class='heading'>heading</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum itaque optio odio officiis sapiente
+                nulla quos aliquid quia odit? Temporibus ut dolore, consequuntur vitae debitis ipsum illo sed, similique
+                quam magnam inventore rem cum.</p>
+        
+    </div>
+
+    <div class="container">
+        <h4 class='heading'>heading</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum itaque optio odio officiis sapiente
+                nulla quos aliquid quia odit? Temporibus ut dolore, consequuntur vitae debitis ipsum illo sed, similique
+                quam magnam inventore rem cum.</p>
+        
+    </div>
+    </div>
+
+</body>
+
+</html>

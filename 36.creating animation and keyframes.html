@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation and keyframes</title>
+</head>
+    <style>
+
+        .bankai{background-color: gray;}
+        .box{ display: flex;
+                    margin:5px;
+                     padding:5px;
+                     border:3px solid  red;
+                     background-color: gold;
+                    height:200px;
+                     width:200px;
+                    animation:vansh1;
+                   animation-duration: 2s;
+                   animation-iteration-count:infinite;
+                     animation-fill-mode: alternate ;
+                     animation-timing-function: ease-in;
+                    /*animation-delay: 2s*/        ;
+                     animation-direction:reverse;}
+                  
+
+                                                       /*animaiton iteration-count: it count how many times animation will occur*/
+                                                      /*animation duration sets the time taken by animaiton to completely*/
+                                                       /*animation-timing-funcition:ease-in just slow down in start and speed increases till end
+                                                           also try ease-out which just slows down in the end*/
+
+    @keyframes vansh1 { 
+        from{ width:200px}
+        to{width:700px;}
+    }
+
+
+     .kageyoshi{background-color: lightseagreen;}
+
+    .dangai{ display: flex;
+                    margin:5px;
+                     padding:5px;
+                     border:3px solid  green;
+                     background-color: blueviolet;
+                    height:200px;
+                     width:200px;
+                    animation:ssj;
+                   animation-duration: 2s;
+                   animation-iteration-count:infinite;
+                     animation-fill-mode: alternate ;
+                     animation-timing-function: ease-in;
+                    /*animation-delay: 2s*/        ;
+                     /* animation-direction:reverse; */
+                    position: relative;}
+
+        @keyframes ssj {
+            0%{
+                  top: 0px;
+                  left:0px
+            }
+
+            25%{top:250px;
+                 left:0px}
+            50%{ top:250px;
+                 left:250px;}
+            75%{top: 0px;
+                left:250px}
+            100%{ top:0px;
+                  left:0px;}
+
+
+        }
+
+
+        /* animation:(animation-name) (animation-duration) (animaiton-timing-funciton)(animation-delay) (animation-iteration-count) (animation-fill-count)*/
+        /*above is short hand for animation css stylesheet */
+
+
+
+
+
+
+    </style>
+<body>
+    <div class="bankai">
+        <div class="box">
+            this is a box
+        </div>
+    </div>
+
+        <div class="kageyoshi">
+            <div class="dangai">
+                this is an another box 
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

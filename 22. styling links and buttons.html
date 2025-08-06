@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psuedo selectors and more designing</title>
+    <style>
+        .container{ border:12px solid rgb(247, 20, 247);
+                    padding:34px 20px;
+                     background-color: rgb(166, 159, 194);
+                     width:700px;
+                     margin:auto;
+
+                    }
+                    a{text-decoration:none;}
+                    a:hover{ color:blue;                    
+                            background-color:aqua}
+                    a:visited{ color:rgb(255, 0, 234);}
+                    a:active{ background-color:rgb(111, 207, 140)}  
+                                                                       /*point to be noted that "a:visited*,"a:hover" and
+                                                                         "a:active" are psuedo css selectors here
+                                                                         1. a:hover - it changes arrow to hand shape when arrow is hovered on the button
+                                                                         2.a:visited - it changes properties mentioned in link as mention in it after the link is visited
+                                                                         3. a:active - it changes color or other properties mentioned in it when arrow is clicked on it or link is activated by clicking on it. */
+                    .btn:visited{color:crimson;
+                                 background-color:rgb(0, 255, 162);}   
+                    .btn:hover{background-color:rgb(5, 103, 240);
+                               border:2px solid black}
+                    .btn:active{background-color:aquamarine}  
+
+                                                                          
+                            
+
+                    .btn{background-color:rgb(182, 157, 157);
+                          padding:13px 20px;
+                           margin:13px 20px;
+                        color:blue;
+                         cursor:pointer;
+                        font-size:13px;
+                        border:none;
+                        border-radius: 4px;
+
+                }
+    </style>
+</head>
+<style>
+
+</style>
+<body>
+    <div class="container" id="first">
+        <h2> this is my first heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam dolorem animi autem harum laboriosam debitis ab aperiam ipsa, ea perspiciatis accusamus alias mollitia! Quae doloribus corporis animi sit fugiat earum minima impedit excepturi vel.</p>
+        <a href="https://google.com" class = "btn" target="_blank">click to read more</a>
+        <button class="btn">contact us</button>
+    </div>
+    
+</body>
+</html>

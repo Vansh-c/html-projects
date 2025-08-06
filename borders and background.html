@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>borders and background</title>
+    <style>
+        p{ color: rgb(24, 124, 51); 
+            font-size:50px;
+             height: 455px;
+            width:600px;
+            background-color:red;
+             border:12px purple solid;
+            border-radius:30px}
+          
+          #slash{color:rgb(15, 15, 56);
+                  font-size:30px;
+                    height:700px;
+                    width:800px;
+                     border-top:5px violet solid;
+                      border-bottom:blueviolet solid 5px;
+                       border-left: blue solid 5px;
+                       border-right: rgb(193, 90, 56) solid 5px;
+                    border-top-right-radius:30px;
+                     border-bottom-left-radius:30px;} 
+            
+        #lion{ background-color: rgb(193, 90, 56);
+               height: 500px;
+               width: 600px;
+              border: 10px solid red;
+               border-radius: 20px;
+                background-repeat:no-repeat ; /*repeat x and repeat y will make it repeat in x axis and y axis*/
+                background-image:url(lion.png);
+                background-position:top right;
+                /*also try out combinations like
+                   background-position:center top
+                   background-position:top center
+                   background-position:top top
+                   background-position:top left
+                   background-position: top right*/ }
+    </style>
+</head>
+<body>
+
+    <h2> borders and background</h2>
+    <p> this  is how one should do it!</p>
+
+    <h2> 2nd example of borders and background</h2>
+    <p id="slash">give it your best shot</p>
+
+    <h2> borders and background part 3 on how to insert image</h2>
+  <p id="lion"><img src="lion.png" alt = " error" ></p>
+    
+</body>
+</html>

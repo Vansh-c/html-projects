@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> css box model , margin and padding</title>
+    <style>
+        *{box-sizing:border-box}  /*this is universal css selector*
+                                    1. box-sizing:border-box - it's a property by which content inside padding adjust itself as per increase or decrease in it's padding pixel size */
+
+
+        .container{background-color: aqua;
+                 border:30px solid red ;
+                  padding-left: 30px;
+                  padding-right: 30px;
+                  padding-bottom:40px; 
+                padding-top: 40px; /* one can add padding/margin as below
+                                      padding/margin-top
+                                      padding/margin-right
+                                      padding/margin-bottom
+                                      padding/margin-left*/
+                margin:34px;
+                 /*to make work easier one can also write:
+                   padding: 40 30 40 30*/
+                 }
+            
+        .car{background-color: blue;
+            border: 20px solid yellowgreen;
+            padding:50px 40px 50px 40px;
+             margin:30px 20px 10px 300px;
+            height: 400px;
+             width:500px;
+            font-size: 30px;
+        color:violet;}
+        
+           /*here it's margin/padding:{top right bottom left}*/
+           /*remember in actual width of an element will include padding, margin both 
+           other variant of margin/width is 
+            1. margin/width: 10px 20px (which is inshort margin/padding: x-axis y-axis)*/ 
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1> this is first paragraph</h1>
+    <P >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ipsam quidem facere recusandae, necessitatibus quam rerum doloremque, dicta, totam rem culpa commodi vero in! Sunt beatae odit quia id ut, qui doloremque ipsum saepe.</P>
+    </div>
+     
+    <div class="container">
+    <h1> this is second paragraph</h1>
+    <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ipsam quidem facere recusandae, necessitatibus quam rerum doloremque, dicta, totam rem culpa commodi vero in! Sunt beatae odit quia id ut, qui doloremque ipsum saepe.</P>
+    </div>
+     <div class="container">
+    <h1> this is third paragraph</h1>
+    <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ipsam quidem facere recusandae, necessitatibus quam rerum doloremque, dicta, totam rem culpa commodi vero in! Sunt beatae odit quia id ut, qui doloremque ipsum saepe.</P>
+     </div>
+
+     <div class="car">
+        <h1> this is third paragraph</h1>
+        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ipsam quidem facere recusandae, necessitatibus quam rerum doloremque, dicta, totam rem culpa commodi vero in! Sunt beatae odit quia id ut, qui doloremque ipsum saepe.</P>
+         </div>
+
+         <div class="car">
+            <h1> this is third paragraph</h1>
+            <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ipsam quidem facere recusandae, necessitatibus quam rerum doloremque, dicta, totam rem culpa commodi vero in! Sunt beatae odit quia id ut, qui doloremque ipsum saepe.</P>
+             </div>
+</body>
+</html>

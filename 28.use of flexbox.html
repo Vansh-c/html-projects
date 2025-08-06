@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>use of flexbox</title>
+    <style>
+        .container{width:100%;
+                    height: 600px;
+                    border:3px solid green ;
+                    /*initialize the container with the flexbox*/
+                   display:flex;
+                   /*properties of flex box*/
+                   flex-direction:row;                /* flex-direction:row is always by default*/
+                   /* flex-direction:column;          /*flex-directionn:column- boxes will start filling from column wise manner*/
+                    /* flex-direction:row-reverse;    /*here boxes sequence will start from right side*/
+                    /*flex-direction: column-reverse; /*boxes sequence will start from fown side*/
+                
+                flex-wrap: wrap;       /*flex-wrap :its used to wrap the document contents as we shrink it*/
+                                       /*flex-wrap:wrap-reverse - it wraps the document contents from bottom*/
+                                    
+                flex-flow:row-reverse wrap;  /*flex-flow - I can set flex-direction and wrap ek saath*/
+            
+               justify-content: center;        /*it will centrally align it to center*/
+               justify-content:space-between;
+
+
+               align-items:center;      /*also try  align-items:flex-start ,  align-items:flex-end   */
+               align-items: stretch;     /* it makes space automatically between the boxes created due to which,try shrinking in inspect option provided by chrome tools */
+               
+              }
+
+
+        .item{height:200px;
+               width:200px;
+            color:aqua;
+               background-color: blue;
+               border:2px solid rgb(39, 11, 46);
+               margin:10px;
+                padding:3px;
+                float:right}
+
+        #item1{order: 7;}   /*ant mein voh jaengan jiska  order bada hoga,here fourth order is small hence it goes to last*/
+        #item2{order: 3;
+               flex-grow:3}   /*flex:grow - it increases the width of our dabbas here*/
+        #item3{order:2;  
+                flex-basis:370px;    /*flex-basis controls width for flex-direction:row and height for flex-direction:column*/
+                 flex-shrink:2}  /*flex:shrink - it decreases the width of our dabba during the time of shrink*/
+
+        #item4{flex:2 2 500px;}  /*short cut to use flex ,here flex: (flex-grow) (flex-shrink) (flex-basis)*/
+        #item5{-ms-flex-align: center;}    /*also try flex-align:flex-start ,  flex-align:flex-end  */
+
+    </style>
+</head>
+<h1>use of flexbox</h1>
+<body>
+    <div class  = 'container'>
+       <div class="item" id="item1">first box</div>        <!-- write div.item#item$*6 and press enter and see emmet magic-->
+       <div class="item" id="item2">second box</div>
+       <div class="item" id="item3">third box</div>
+       <div class="item" id="item4">fourht box</div>
+       <div class="item" id="item5">fifth box</div>
+       <div class="item" id="item6">sixth box</div>  
+    </div>
+</body>
+</html>

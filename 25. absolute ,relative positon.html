@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         /*position relative is used to set position relatively to its user*/
+         /*types of position: relative,absolute,*/
+
+        .can{display: inline-block;        /*display:inline-block makes whole content both block and inline*/ 
+             border:6px solid red;
+            width:150px;
+            margin: 4px;
+            height:150px;
+        }
+
+        #can1{
+            position:relative;  /*relative position: leaves a gap relative to its parent position */
+                                /*while absolute position not much have so much of a use */ 
+            top:30px;
+            left:40px;
+                 }
+
+
+
+        #can3{position:fixed;    
+             right:44px;}       /*position fixed: fixes the content on either of sides and remains intact when we scroll up or down relative to the browser window*/
+
+
+
+            #can2{position:sticky;}       /* position:sticky: it is used to stick the website on upper side */
+
+            
+        #container{border:2px solid black;
+                    height:4000px;
+                   background-color: aquamarine;}
+
+         
+
+        
+    </style>
+</head>
+<body>
+    <div id = 'container'>
+    <div class="can" id="can1">1</div>
+    <div class="can" id="can2">2</div>
+    <div class="can" id="can3">chat with us</div>
+    <div class="can" id="can4">4</div>
+    </div>
+</body>
+</html>

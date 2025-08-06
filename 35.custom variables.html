@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>custom variables and custom properties </title>
+</head>
+   <style>
+
+    :root{ 
+        --primary-color: purple;
+         --mera-color: orange;    /*with help of root concept we can store colors here and access it whennever required*/
+          --maxw:500px   ;
+          --maxh:600px;}
+
+
+    .box{ width:200px;
+           height:200px;
+           background-color: aqua;
+           margin:4px;
+           padding:6px;
+          border:3px solid red;
+          box-shadow: 7px 10px var(--mera-color);     /*this is use of variables,it's availables in root: so that it can access from anytime or to apply it as per requiered*/
+          text-shadow:4px 5px var(--primary-color);}
+
+          .container{ display:flex}
+
+          .class{ width:var(--maxw);
+                  background-color: var(--primary-color);
+                  height:var(--maxh);
+                 border:4px solid lawngreen; }
+   </style>
+<body>
+    <div class="container">
+        <div class="box">this is my car</div>
+        <div class="box">my car name is bmw</div>
+        <div class="box">my car runs at 64 km/hr</div>
+        <div class="class">this is use of custom variables</div>
+    </div>
+    
+</body>
+</html>

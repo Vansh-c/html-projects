@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+  <style>
+    #box{display: flex;
+         height:250px;
+         width:250px;
+         background-color: red;
+        justify-content: center;
+         align-items: center;
+        transition-property: background-color;
+         transition-duration:2s;
+          transition-timing-function: ease-in-out;
+        /*transition-delay:2s;*/}
+                                /*also try ease-in and ease-out*/
+                                /*short hand --> transition:(background-color) (transition-duration) (transition-timing-function) (transition-delay)*/
+
+    #box:hover{ background-color: aqua;}
+
+    #kaka{ display:flex;
+           height:90px;
+           width:90px;
+          background-color:aquamarine;
+            justify-content: center;
+             align-items: center;
+            transition: all 2s ease-in-out;
+          box-sizing: border-box;
+         padding:4px;
+         margin:5px;}
+
+    #kaka:hover{background-color: hotpink;
+                  border:5px solid turquoise;
+                 height:500px;
+                 width:500px;
+                }
+
+  </style>
+<body>
+    <h1> this is use of transition in html</h1>
+    <div class="container">
+        <div id="box">
+            this is a box
+        </div>
+    </div>
+
+    <div class="goat">
+        <div id="kaka">
+            this is another transition box
+        </div>
+    </div>
+    
+</body>
+</html>

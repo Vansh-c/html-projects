@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float and alignment</title>
+    <style>
+        .container {
+            border: 5px solid rgb(53, 8, 233);
+            width: 1000px;
+            box-sizing: border-box;
+            margin: auto;
+            /*margin here automatically takes here space and takes content to the middle*/
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+            background-color: rgb(174, 187, 52);
+
+
+        }
+
+        .item {
+            border: 20px solid blueviolet;
+            background: rgb(223, 189, 180);
+            padding: 20px 10px;
+            margin: 20px 10px
+        }
+
+        #fruit {
+            float: left;
+            /*here float is used to float the text or css document in right/left*/
+            width: 42%;
+
+
+        }
+
+        #pen {
+            float: left;
+            /*here float is used to float the text or css document in right/left*/
+            width: 41%;
+            height: 212px;
+
+
+        }
+
+        #vegetables {
+            clear:both;
+            /*clear:left/right/both is used to prevent overlapping of elements*/
+            width: 91%;
+
+
+        }
+
+        p,
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- here I gave id to identify it umiquely and class to use css stylesheet -->
+
+    <div class="container">
+        <h1>Welcome to my store</h1>
+        <div id="fruit" class="item">
+            <h2> fruits</h2>
+            <p id="fruitspara" class="first"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, maiores
+                sunt. Mollitia, fugit provident aut quasi perspiciatis omnis distinctio esse Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Blanditiis, ipsam similique. Praesentium ab earum delectus, voluptas
+                dolorum voluptatibus in repudiandae magnam error vel nostrum itaque reiciendis. Neque, eius nam.
+                Veritatis. .</p>
+        </div>
+
+        <div id="pen" class="item">
+            <h2>pen</h2>
+            <p id="penpara" class="second"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa ducimus
+                natus illo, in expedita minus porro. Est facilis iste debitis! </p>
+        </div>
+
+        <div id="vegetables" class="item">
+            <h2> vegetables</h2>
+            <p id="vegetablespara" class="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dicta
+                ad amet dolorem facere culpa distinctio tempora provident voluptatem perferendis Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Natus error minima quos omnis dicta? Vitae, reprehenderit ratione.
+                Numquam atque voluptate minima, mollitia dicta impedit omnis iure. Deserunt suscipit error saepe!
+                .</p>
+        </div>
+
+        <div id="vegetables" class="item">
+            <h2> vegetables</h2>
+            <p id="vegetablespara" class="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dicta
+                ad amet dolorem facere culpa distinctio tempora provident voluptatem perferendis Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Natus error minima quos omnis dicta? Vitae, reprehenderit ratione.
+                Numquam atque voluptate minima, mollitia dicta impedit omnis iure. Deserunt suscipit error saepe!
+                .</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

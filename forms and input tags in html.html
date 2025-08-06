@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+    <h2>this is forms html</h2>
+    <!-- lets learn how to use form tag,here we could have used br  tag but its not a good practice,so we will use <div> tag
+        <div> tag takes entire block as width and next element has to go down -->
+          <!-- here label for tag is used so when we click on the word "name" in our website so that the option on our website gets automatically selected -->
+    <form action="backhend.php">
+    <label for="name" >name </label>
+   <div>
+     name: <input type="text" name="myname" id="name">
+    </div>
+
+     
+   <br>
+   <!-- now lets learn how to use email type,here in "input email"name is such an entity through which 
+    backhend will recognised you bywhen we will add data,backhend.php has to identify email in our example-->
+  <br>
+   <div>
+    email: <input type="email" name="myemail">
+  </div>
+  <br>
+  <!-- below is how to use other forms of input forms -->
+  below is how to use other typws of email forms
+  <br>
+  <div>
+    role: <input type="text" name="myrole">
+  </div>
+  <div>
+    name: <input type="name" name="myname">
+  </div>
+
+  <div>
+    email: <input type="email" name="myemail">
+  </div>
+  <!-- if we want to add submit button  -->
+  <div>
+    <input type="submit" value="submit now">
+  </div>
+
+  <!-- lets learn how to add date form -->
+  <br> 
+  
+  <div>
+    date: <input type="date" name="mydate">
+  </div>
+  <br>
+  <div>
+    mobilenumber: <input type="number" name="mobilenumber" >
+  </div>
+  <br>
+  below is how to use radio button and checkbox
+  <!-- below shows how onw can learn to use checkbox -->
+  <br>
+  <div>
+    do you agree with terms:<input type="checkbox" name="myeligibillity" checked>
+  </div>
+  <!-- lets lear nhow to usw radidobutton -->
+  <br>
+  below is use of radidobutton
+  
+  <div>
+    Gender: male <input type="radio" name="myGender">      Gender: female <input type="radio" name="myGender">
+
+  </div>
+
+  <div>
+   <input type="reset" value="reset now" > 
+  </div>
+
+  <!-- below is how to use text area -->
+  <div>
+    write about yourself: <br> <textarea name="mytext" rows="10" cols="30" >
+  </div>
+
+ below is use of select and label tag
+ <!-- in label tag,label and id must be same ,,below code also gives an examp;e on how to use select with label -->
+ <label for="car">car</label>
+ <select name="mycar" id="car">
+    <option value="indica">indica</option>
+    <option value="toyota">toyota</option>
+ </select>
+
+</form>
+</body>
+</html>

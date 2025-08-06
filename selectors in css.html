@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors in css</title>
+    <style> 
+        /* below is example of internal css  */
+        p{ color:crimson ; background-color:forestgreen}
+          /* id selector */
+         #bankai{ color:ghostwhite ; background-color:darkmagenta;}  
+
+         /* class selector */
+        .ready{color:crimson ; background-color:cyan}
+        /* another class selector example */
+        .toptier{color:blueviolet; background-color:aqua} 
+
+        /* below is grouping of elements */
+
+        footer,header,h4{color:aqua; background-color: black;}
+        span{color:blueviolet; background-color: chartreuse;}
+
+        /* below is how to add border color  */
+
+        p{ border:4px solid indigo;}
+        header,footer{border:7px  solid yellow;}
+        h4{border:4px solid brown;}
+        span{border:3px solid red;}
+
+
+
+        
+
+    </style>
+</head>
+<body>
+    <h3> css selectors</h3>
+    <p> this is a simple paragraph to demonstrate css selectors</p>
+    <p id="bankai"> I am strong</p>
+    <p> I get stronger day by day</p>
+    <p class = "ready"> let's do it</p>
+
+    <!-- adding <div> tag does'nt have any effect on selectors tag since internal css is applied to all paragraphs -->
+        <div>
+            <p> hello dostos !</p>
+        </div>
+        <!-- if both id and class is mentioned then in internal css we have to define for both of the above
+             remember to use "." for class and "#"for id to define below is example  -->
+
+             <p id= "vansh" class = "toptier"> vansh joshi is the best</p>
+
+             <h3> below is example of grouping of class</h3>
+             <footer> this is footer</footer>
+             <header> ramuloo ramulaa </header>
+             <h4> vansh is strong name</h4>
+             <span> hehe</span>
+             
+
+
+
+    
+</body>
+</html>

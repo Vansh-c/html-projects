@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>use fo psuedo css selectorst</title>
+</head>
+<style>
+    .container{margin:auto;
+           display:block;
+              width:250px}
+
+    input{display:block;}
+
+    input[type='text']{ border:4px solid crimson;
+                       color:yellowgreen;
+                       background-color: blue;}
+
+    a[target]{color:blueviolet;
+             font-size:37px;
+             background-color:aqua;
+              text-decoration:none}
+
+    a[target]:hover{color:aquamarine;
+                     background-color:black;}
+
+    a[target="_bankai"]{color:rgb(73, 12, 53);
+                        background-color: rgb(10, 76, 133);
+                        display:block}
+
+    input[type="password"]{color:aqua;
+                          background-color: rgb(9, 57, 171);
+                         border:3px solid red ;}
+
+
+    /*let's see use fo nth-child psuedo selector*/
+
+    li:nth-child(3){color:purple}
+
+    /* try li:nth-child(2n)  -  it gives desired properties to every 2n element ,try same by eqns 3n+1, etc*/
+    li:nth-child(2n){color:rgb(198, 113, 9)}
+
+    /*also to select odd elements */
+
+    li:nth-child(odd){color:darkblue;
+                      background-color: yellow;}   /*also try li:nth-child(even)*/
+
+
+
+    
+</style>  
+<body>
+
+
+<div class="container">
+    <a href="http://google.com" target="_blank">go to google</a>
+    <a href="http://facebook.com" target="_bankai">go to facebook</a>
+
+
+    <form action="" class="form-control">   
+        <input type="text" placeholder="enter your name">
+        <input type="password" placeholder="enter your password">
+        <input type="submit" value="submit">
+    </form>
+
+
+    <ul>
+        <li class="item-1">item-1</li>
+        <li class="item-2">item-2</li>
+        <li class="item-3">item-3</li>
+        <li class="item-4">item-4</li>
+        <li class="item-5">item-5</li>
+        <li class="item-6">item-6</li>
+        <li class="item-7">item-7</li>
+        <li class="item-8">item-8</li>
+        <li class="item-9">item-9</li>
+        <li class="item-10">item-10</li>
+    </ul>
+
+    </div>
+    
+</body>
+</html>

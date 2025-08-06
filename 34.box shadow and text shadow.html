@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box shadow and text shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            margin: 23px 12px;
+            padding: 23px 12px;
+            border: 2px solid red;
+            background-color: aqua;
+            /* box-shadow:6px 4px green; */
+            box-shadow:-7px -5px  10px  green;  /*it also accepts negative value and see its magic, */
+                                                 /* box-shadow:(offset-x) (offset-y) (radius) (also can include blur radius) (color);*/
+            text-shadow:4px 3px yellow;
+        }
+         #card-2{box-shadow:5px 6px green,10px 10px rgb(50, 2, 36); /*in this way we can give multiple shadow boxes*/}
+
+        #card-3{ box-shadow:inset 5px 10px 10px 5px green;  /*inset increases radious form inside, here we have used both blur radius and radius things*/}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>
+                <h2>card-1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore tempore deleniti odit impedit maxime
+                    optio ex dolores libero est earum eligendi, suscipit tempora excepturi blanditiis harum. Voluptates
+                    quae iusto at, quaerat quia voluptatum nostrum.</p>
+            </h2>
+        </div>
+        <div class="card" id="card-2">
+            <h2>card-2</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsa nihil sit libero et magni natus
+                quod eaque saepe beatae? Qui aliquam eveniet temporibus vitae? Eum esse voluptate dolore praesentium
+                recusandae fugiat alias hic!</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>card-3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex magnam exercitationem sequi officiis corporis
+                maiores doloremque cum voluptatum voluptates nisi quis, non ut eveniet sapiente autem obcaecati quas
+                iste in modi fuga adipisci aliquam.</p>
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
