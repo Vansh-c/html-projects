@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+ <span id = 'time'></span>
+
+  <script>
+
+   let now = new Date(0)
+   console.log(now)
+
+   let dt = new Date(1000)
+   console.log(dt)
+
+   let tak = new Date(7024,5,7,6,4,6,4000)
+   console.log(tak)
+
+  let yr = tak.getFullYear()
+  console.log(yr)
+
+  let u = tak.getMonth()
+  console.log(u)
+
+  let add = (a,b)=>{
+    console.log(a+b)
+  }
+
+  add(9,6)
+
+  let f = (a)=> {return a/2}
+
+ let k = f(9)
+ console.log(k)
+
+
+ let jo = {
+  name:'Vansh',
+  hobby:'coding and badminton',
+  friend:'lord of the universe',
+  food:'paneer and mohan thaal'
+ }
+
+ console.log(jo)
+
+ let jsstr = JSON.stringify(jo)
+ console.log(jsstr)
+
+ jsstr.replace('vansh','Vansh Manishbhai Joshi')
+ console.log(jsstr)
+
+
+
+
+  </script>
+</body>
+</html>

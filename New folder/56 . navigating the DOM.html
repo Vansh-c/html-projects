@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating DOM</title>
+    <!-- DOM : it stands for document object model  which means whatever is written inside body tag or whole html you can access it as a tree struction  from javascript.. -->
+
+
+</head>
+<body>
+    <div id = 'main' class="container">
+    <ul id="nav">
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>More about Us</li>
+        <li>Contact Us</li>
+    </ul>
+    </div>
+
+    <div class="container">
+        Another container
+    </div>
+
+    <script>
+        let main = document.getElementById('main')
+        console.log(main)
+
+        let nav = document.getElementById('nav')
+        console.log(nav)
+        // try writing nav.innerHTML = "<li> dynamic content</li>" on console on this webpage
+
+
+        let containers = document.getElementsByClassName('container')
+        console.log(containers)
+
+        // try writing containers[0] and click enter on console during introspection  of webpage.
+        // do same as above try writing containeers[1] on  console during introspecttion of this webpage
+
+
+
+        // cam css selectors can be used to select an element and answer is yes,hence it can be done throught document.querySelector
+
+        let sel = document.querySelector('.container')
+        console.log('Selector return',sel)
+
+
+        let sel2 = document.querySelector('#nav>li')
+        console.log('Selector return',sel2)
+
+        // let see use of querySelectorAll , it is used to return and select every element below is example
+
+        let sel3 = document.querySelectorAll('#nav>li')
+        console.log(sel3)
+
+        // try writing sel3[0].innerHTML = "this text is inserted" , it changes the first appearance of li 
+
+        // lets see how one alter content in html throught DOM.
+
+    </script>
+</body>
+</html>

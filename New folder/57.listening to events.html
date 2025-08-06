@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to discuss about Events and listening to Events in javascript</title>
+</head>
+
+<style>
+    #btn{
+        padding:10px 14px;
+        background-color:red;
+        color:blue;
+        border:2px solid black;
+        font-weight:bold;
+        cursor:pointer;
+
+    }
+</style>
+
+<body>
+
+    <!-- browser events 
+     
+    click
+    contextmenu
+    mouseover/mouseout
+    mouseup/mousedown
+    mousemove
+    
+    submit 
+    focus
+    
+    DOCcontentLoaded
+    
+    transitionend-->
+
+
+    <div class="container">
+        <h1>this is my heading</h1>
+        <p id = 'para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ratione voluptates atque soluta nemo
+            accusamus tenetur sequi dignissimos vel porro cum nam laboriosam suscipit excepturi quaerat reiciendis non
+            delectus aperiam, ullam fuga. Doloribus incidunt mollitia nostrum iusto nesciunt optio quo accusantium
+            fugiat libero nobis eaque eius, reiciendis id praesentium, temporibus ducimus accusamus odio dolorem non
+            explicabo? Neque pariatur, numquam sed eos vel sit animi commodi quas fuga earum voluptatibus eligendi
+            deserunt? Possimus unde at a, inventore quod nemo suscipit in nostrum esse maiores harum iure, aliquid, id
+            quisquam exercitationem facere pariatur reiciendis! Placeat nulla officiis ut nam harum. Cupiditate commodi
+            architecto eum, debitis labore voluptatibus deleniti magnam amet deserunt beatae, animi ullam eligendi
+            exercitationem adipisci aliquid provident, ipsam praesentium. Fuga veniam consectetur cum obcaecati, rerum
+            possimus. Aliquam maxime suscipit maiores accusantium incidunt, quis dicta sapiente excepturi. Provident
+            rem, ad officiis quisquam, repellat itaque explicabo id obcaecati impedit necessitatibus alias? Ipsa
+            voluptatum qui nihil quam iusto tempore corporis voluptatibus doloremque temporibus architecto quae,
+            cupiditate optio illo aut. Eaque quaerat ea assumenda placeat accusamus inventore, asperiores rem nisi fuga
+            ipsam quisquam? Qui reprehenderit ratione at ea? Sed dolore alias dolores asperiores quis optio. Nostrum
+            tempora harum ex illum voluptatem soluta, aliquid, ipsa unde, officiis impedit id? Mollitia quod id tenetur,
+            non, expedita accusamus tempora vero reiciendis neque, sint delectus nesciunt quis! Inventore harum iusto
+            assumenda, quidem tenetur, labore reprehenderit illum aut minus accusamus nulla mollitia.</p>
+    </div>
+
+    <button id="btn" onclick="toggleHide()">show/hide</button>
+
+    <script>
+
+    // this is use of function event listener
+        let para=document.getElementById('para')
+        para.addEventListener('mouseover',function run(){
+            alert('mouse is inside the para')
+        });
+
+        para.addEventListener('mouseout',function run(){
+            alert('the mouse is out of the para')
+        })
+
+
+// below is demonstration of making of event
+        function toggleHide(){
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+
+
+        // if( para.style.display=="none"){
+        //     para.style.display='block'
+        // else{para.style.display='none'}
+
+
+        if(para.style.display!='none'){
+            para.style.display= 'none'
+        }
+        else{para.style.display= 'block'}
+
+    }
+
+        
+       
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow function</title>
+</head>
+<body>
+    <div class="container">
+        this is use of arrow function
+    </div>
+
+    <script>
+
+        // below is the use of arrow function,it provides a shortcut 
+        let  greet = ()=>{
+            console.log('good morning ');
+        }
+
+        greet()
+
+        setTimeout(()=>{
+    console.log('this is use  of arrow function')},1)
+
+    // lets see another examples
+
+    let sum = (a,b)=>{
+        return a+b
+    }
+    let t =sum(7,4)
+    console.log(t)
+
+    // write sum(3,4) on console and press wnter while inspecting
+
+    let sum2 = (a,b)=> a+b;  //this is more shortcut version to write the above code
+    let t2 = sum2(8,5)
+    console.log(t2)
+
+    let half = a=>a/2      // say if you have no argument then bracket is important to be applied after '=' sign
+    console.log(half(4))
+
+
+    let object = {
+        names:['vansh','anubhav','abhinav'],
+        speak(){
+            this.names.forEach((student)=>{
+                console.log('hello' , student) 
+            });
+        }
+
+        }
+        object.speak();
+
+        console.log('')
+        console.log('')
+
+        // below is another example
+
+        let object2 = {
+        names:['vansh','anubhav','abhinav'],
+        greeting:'Good Morning',
+
+        speak(){
+            this.names.forEach((student)=>{
+                console.log(this.greeting + ' hello' , student)
+            });
+        }
+
+        }
+
+        object2.speak()
+
+    
+
+
+
+    
+    </script>
+    
+</body>
+</html>

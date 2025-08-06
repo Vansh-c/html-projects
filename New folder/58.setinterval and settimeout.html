@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript  settleout and settimemout</title>
+</head>
+<body>
+    <div class="container">
+        this is a container
+    </div>
+    <div>
+        the time now is <span id="time"></span>
+    </div>
+
+    <script>
+        console.log('this is example 58')
+
+        // setTimeOut: it allows us to run the function once after the interval of time
+        // clearTimeOut: Allows us to run the function after the interval of time
+ 
+        function bankai(name,byeText){
+            console.log('hello good morning'+ name + ' ' +byeText );
+        }
+        // setTimeout(bankai,5000," Vansh", "Take Care")    // here we have written 5000 which implies it will run after five seconds.here seconds are written in milliseconds
+        // setTimeout(bankai(),12000) ==> wrong as it is calling the function inside setTimeout
+
+        // let's talk about timeOut functiion
+
+        timeOut = setTimeout(bankai,5000," Vansh"," Take Care");  // timeOut will give call which means it will retrun me an unique id on console and this id can be used to clear it  with clear timeOut
+        console.log(timeOut);     // here setIimeOut is set like ==> setTimeOut(calling of funciton,time  in milliseconds,name syntax in functiin , byetext syntax in funciton)
+
+        clearTimeout(timeOut)    // here timeOut will be not shown ,uncomment this line to show the time out function . 
+
+        // setInterval(bankai,1000," Vansh",' Take Care')        // it will repeated print the line after one second
+
+        // interValId = setInterval(bankai,1000,' Vansh',' Take care')
+        // console.log(interValId)
+
+
+        function displayTime(){
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+        }
+
+        setInterval(displayTime,1000)
+
+        // if we want to add time in our website we can add like this 
+
+        
+
+     </script>
+</body>
+</html>

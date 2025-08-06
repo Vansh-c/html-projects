@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interaction of alert prompt and confirm</title>
+</head>
+<body>
+    <div class="container">
+        this is  a page
+    </div>
+
+    <script>
+        // let's see use of alert function
+       //  alert('this is a message');   
+     // iski return  value undefined hoti hai which means I can't write it as let a =alert('this is a message') try by uncommenting abovoe code
+
+    //  let name =prompt('enter your password','')
+    //  console.log(name)
+
+    //let say use of confirm function 
+
+    // let bankai = confirm('do you really want to delete this post')
+    // console.log(bankai)
+    //above code will give us 'true' if clickd ok and 'false' if cencels 
+
+    // let's see  another example
+
+    let dangai = confirm('do you really want to delete this post')
+
+    if(dangai){
+        console.log('your post has been deleted successfully')
+    }
+    else{
+        console.log('your post has not been deleted')
+    }
+
+
+
+    </script>
+    
+</body>
+</html>

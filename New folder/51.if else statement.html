@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scope and conditionals of javascript</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>item 1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+        </ul>
+    </div>
+
+    <script>
+        var string1= ' this is a string';
+        var string1 = ' this is string2'  ; // var is our global attribute which means here there is possibiliyt of error
+        console.log(string1)
+
+        let a = 'u'; 
+        {                                               // since let a ='u5' is confined inside this block it's scope is inside this block hence it is block level element
+            let a = 'u5';
+            console.log(a) ;
+        }
+        console.log(a)                                  // ye bahar  vale let ko lelega here
+
+        // let's see const function,it is a function which cannot be changed if tried to change it will give error
+        const b = 'this is impossible to change';
+        // b = 'i want to change this'  try uncommenting this and you will get error of 'assignment to constant variable'
+        console.log(b);
+
+        // lets see if else conditionals
+        // below is example 1 , note here that from  here on let will used on daily basis
+        let age = 30;
+        if(age>18){
+            console.log("you are eligible to vote");
+        }
+        else{
+            console.log("you are not eligible to vote");
+        }
+
+        // you can add multiple if else statement
+        let age2 = 4;
+        if(age2>4){
+            console.log('you can drink coldrink')
+        }
+        else if(age2 == 4){
+            console.log('you can drink both water and coldrink')
+        }
+        else{
+            console.log('its important to drink water')
+        }
+
+
+        // let's see an exmaple of swithc case statements
+
+        const cups = 42
+        switch (cups) {
+            case 40:
+                console.log('the value of given cup is 40');
+                break;
+
+                case 41:
+                console.log('the value of given cup is 41');
+                break;
+
+                case 42:
+                console.log('the value of given cup is 42');
+                break;
+
+                case 43:
+                console.log('the value of given cup is 43');
+                break;
+        
+            default:
+                console.log('the value of cups is none of 40,41,42,43')
+                break;
+        }
+
+
+    </script>
+    
+</body>
+</html>

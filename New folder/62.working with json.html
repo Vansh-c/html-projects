@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- json in javascript is used to transport objects or data in javascript over a large network in a string format. -->
+
+    <div class="container">
+        this is my container
+    </div>
+
+    <script>
+        let jsonObj = {
+            name:'vansh',
+            hobby:'coding and badminton',
+            friend:'lord of the universe',
+            food:'paneer and mohan  thal'   // paneer lover
+        }
+
+        console.log(jsonObj);
+
+        let myjsonstr = JSON.stringify(jsonObj)  // suppose we have a complicated file and we want it to be passed it on a netword than jsonObj is used
+        console.log(myjsonstr)                         // basically , this 'JSON' function converts the whole code into string and pass it over the network
+
+        // sicne given object is stringied hence we can now manipulate and make changes in it , below is example
+
+        myjsonstr.replace('vansh','joshi')
+        console.log(myjsonstr)
+
+        newjsonstr = JSON.parse(myjsonstr)           // condition to use parse functiion is it only takes which is in valid json folder
+        console.log(newjsonstr)
+    </script>
+</body>
+</html>

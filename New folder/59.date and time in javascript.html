@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+  <style>
+    .container{
+        font-size:30px;
+        background-color: aqua;
+        color:purple;
+        border:3px solid red;
+        display:flex;
+        text-align: center;
+    }
+  </style>
+<body>
+    <div class="container"> 
+        the current time in India:<span id="time"></span>
+    </div>
+
+    <script>
+        console.log('this is a date and time container')
+        let now = new Date()  ; // here this is an contructor and date() is an object
+        console.log(now)
+
+        let d5t = new Date(0)  // this 0 in bracket gives us reference time throught which time should be considered
+        console.log(d5t)
+
+        let dt = new Date(1000)
+        console.log(dt)
+
+        let newDate = new Date('2030-11-30')   //  this shows which day will be there on this date in future
+        console.log(newDate)
+
+        // let newdate2 = new Date(year,month,date,hours,minutes,seconds,milliseconds)
+        let tak  = new Date(7024,5,7,3,4,5,3000)
+        console.log(tak)
+        
+        let yr = tak.getFullYear()     // it will show the given year 
+        console.log('the year is ', yr) 
+
+        let dte = tak.getDate()
+        console.log('the date is ', dte)
+
+        let month = tak.getMonth()   // it will show given month
+        console.log('the month is', month)
+
+        let hour = tak.getHours()
+        console.log('the hour is ', hour)
+
+
+        tak.setDate(8)
+        tak.setMinutes(29)
+        console.log(tak)
+
+
+        setInterval(updateTime,1000)
+
+        function updateTime(){
+            time.innerHTML= new Date()
+        }
+
+        
+
+
+
+    </script>
+</body>
+</html>

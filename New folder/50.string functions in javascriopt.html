@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript string functions</title>
+</head>
+<body>
+    
+    <script>
+        var str = 'this is a string';
+        console.log(str);
+
+        var position =   str.indexOf('is');         // indexOf function gives position of given word in first occurence of given word
+        console.log(position)  ;     
+        
+        position = str.lastIndexOf('is');
+        console.log(position)  ;                   // lastIndexOf gives last occurence of given included string
+
+        // example of substring from a string
+        var substring = str.slice(1,7);              // difference between substring and slice is slice also takes negative values
+        console.log(substring);
+
+        // example of substring
+        var substring = str.substring(1,7);
+        console.log(substring);
+
+        // replace function in python
+        var replace = str.replace('string','vansh');
+        console.log(replace);
+
+        console.log(str.toUpperCase())   ;     // it will cover my string in upper  case
+        console.log(str.toLowerCase())   ;         // it will change my string in lower case
+
+        // let's see use  of concat method in python
+        var newstring = str.concat(' New String')    ;        // concat('') just add new string beside our old string 
+        console.log(newstring);
+
+        // below is use of trim function , it cancels white spaces in a given string
+        var strwithwhitespaces = '     this contains               whitespaces      ';
+        console.log(strwithwhitespaces);
+        console.log(strwithwhitespaces.trim()) ;
+
+        //let's have a look at charaAt function
+        var char2 = str.charAt('2');                 // charAt gives given character for position mentioned
+        console.log(char2);
+
+        var char3 = str.charCodeAt(2);           // charCodeAt gives character code at  given position mentioned
+        console.log(char3);
+
+        // slicing of string can also be done in given way
+        console.log(str[2]);
+        console.log(str[6]);
+    </script>
+</body>
+</html>

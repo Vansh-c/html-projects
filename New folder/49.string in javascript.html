@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string and string methods</title>
+</head>
+
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur.</p> 
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt reiciendis exercitationem sed numquam, facere
+            minus in pariatur aperiam! Recusandae sapiente quas modi! Minus hic fuga quaerat vel corporis optio repellat
+            quam incidunt sunt suscipit sequi nostrum atque, pariatur doloribus! Architecto error aut voluptatibus   
+            illum? Inventore hic cumque porro, magnam distinctio minima voluptas dignissimos eius nulla nemo, totam
+            quibusdam quae. Ut?</p>
+
+            <h3> </h3>  
+        </div>
+
+    <!-- below method shows how to make strings in javascript -->
+
+    <script>
+        var string = "vansh";
+        var b = "it's my name " ;     // here single quote can be used inside double quote but doublt quote can't be used  inside single quote
+        console.log(string);
+        console.log(b)
+
+        // below is addition of strings
+        var a = 'vansh ';
+        var b = 'is a good child';
+        var c = 'and I will become super scientist and super engineer ' ;
+        console.log(a+b+c);
+
+        // below is use of ${''} thing
+
+        var name = 'ichigo';
+        var bankai = ' tensa zangetsu';
+        var sentence = `his name is ${name} and his bankai name is ${bankai}`;              // remembeer to give backticks here  ' ` '
+        console.log(sentence);
+        var len = name.length;
+        console.log(`length of name is ${len}`);
+
+        console.log('');
+        console.log('hello world\n Vansh \t\t\t and there is also backslash b \b\b') ;  // \n uske baad vale content ko niche le jata hai and \t is used to make space in a docunent
+
+
+        var y = new String('this is a string');    // this is another method to make string
+        console.log(y);
+
+        // below is just an example of javascript in html we will study about it later
+        document.getElementById('content').innerHTML = '<h3> this is an html heading using javascript </h3>'
+    </script>
+</body>
+
+</html>

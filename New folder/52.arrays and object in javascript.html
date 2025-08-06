@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">this is a simple html file</div>
+    <script>
+        let myvar = 34 ;
+        let var2 = 'this is a string';
+        let var3 = true;          // we can also give boolean value
+        let var4 = null;           // it gives null value when run
+        let var5=undefined;       // returns undefined value
+
+
+        // object stores  our key value pair below is example
+        let employee = {
+            name: "vansh",
+            channel :"codeWithVansh",
+            channel2: "bankaigetsugatenshou",
+            salary:60000,
+            "channel    3"  : "xyz news channel"              // say if I want to leave space then I can keep channel   3 in quotation marks
+        }
+
+        console.log(employee) 
+        console.log(employee.name)
+
+
+        // let's see about array,arrays are special type of objects
+        let names =  ['vansh','harsh','anubhav','kartik']        // here vansh ,harsh ,anubhav and kartik aren't object they are arrays
+        console.log(names)          
+        console.log(names[0])
+        console.log(names[3])   
+        names = names.sort()  // sorting method in javascript
+        console.log(names)    
+        names.push('this content is pushed')          // worksk similar to append method in python , it just adds content inside it
+        console.log(names)
+
+
+        // let's see other functions
+        let bankai = [1,4,33,"Vansh",undefined]
+        console.log(bankai)
+         bankai = new Array(23)
+         bankai.push('this is a written text')
+         console.log(bankai) 
+    </script>
+    
+</body>
+</html>
