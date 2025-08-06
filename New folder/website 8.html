@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            z-index:-5
+            }
+
+        .bankai{
+            background:linear-gradient(rgba(0, 0, 0, 0.731),rgba(0, 0, 0, 0.731)),url("flowers.jpg");
+            backdrop-filter:blue(10%);
+            background-size:cover;
+            height: 100vh;
+            width:100%;
+            box-sizing:border-box; 
+            backdrop-filter: blur(10px);      
+            z-index: -3;     
+
+            
+            
+        }
+
+        .ban2{
+            height:200px;
+            background-color: rgba(0, 0, 0, 0.716);
+            z-index:300;
+            list-style: none;
+            box-sizing: border-box;
+            z-index:-2
+
+        }
+
+         .ichi ul li {
+            margin-left:7%;
+            display: inline-block;
+            margin-top:73px;
+            font-size:30px;
+            color:white;
+            position:relative;
+            z-index: 300;
+            transition:0.5s ease
+         }
+         .ichi ul li:hover{
+            color:purple;
+            transition: 0.5s ease
+         }
+         .ichi ul li::after{
+            color:yellow
+         }
+
+         .ichi ul li a::before{
+            content:' ';
+            height:0px;
+            background:yellow;
+            position:absolute;
+            bottom:-32px;
+            left:0;
+            width:100%;
+            transition: height 0.5s ease;
+            z-index:-1;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+         }
+
+         .ichi ul li a:hover::before{
+            height:100px;  
+            background:purple;
+                   
+         }
+
+         a{color:white;
+        text-decoration:none}
+
+        
+    </style>
+</head>
+<body>
+
+    <div class="bankai">
+        <div class="ban2">
+            <div class="ichi">
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Query</a></li>
+                    <li><a href="#">about myself</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

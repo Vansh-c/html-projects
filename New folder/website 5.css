@@ -1,0 +1,134 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+    background-color:#42455a;
+
+}
+
+.container{
+    width:100%;
+    height:100%;
+
+}
+
+.menu ul{
+    display:inline-flex;          /*display:flex is useful for creating complex design and layouts that adapt well to different screen sizes
+                                   here we have used display:inline-flex for making content both inline and flex*/
+    margin:50px;
+
+}
+
+.menu ul li{
+    list-style:none;
+    margin:0 20px;
+    color:#b2b1b1;
+    cursor: pointer;
+}
+
+.logo img{
+    width:50px;
+    margin-top:-10px;
+    margin-right:48px;
+}
+
+.active{
+    color:#19dafa !important    /* !important is an css property which is used to add more importance to the value/property than normal,if one uses !important  it will override all previous styling rules for that specific property of that element*/
+}
+
+.signup{
+    position:absolute;
+    top:40px;
+    right:80px;
+    text-decoration:none;
+    color:white;
+    border:5px solid transparent;   
+    border-radius:20px;
+    background-image:linear-gradient(#42455a,#42455a), radial-gradient(circle at top left,#fd00da,#19d7f8); 
+    background-origin:border-box;              /*The background-origin property in CSS is your key to managing the background image of a webpage. It sets the origin point of the image in the background, with the default setting placing the background image origin at the upper-left corner of the screen/webpage*/
+    background-clip:content-box,border-box;  /*defines how far the background(color or image) should extend within an element*/
+                                               /*background-clip:content-box, it shows bg image only in content area,ignores padding and border*/
+}
+
+.signup span{
+    padding:8px 22px;   
+    display:block;
+    border-radius:20px;
+}
+
+.banner{
+    width:80%;
+    height:70%;
+    position:absolute;
+    top:25%;
+    left:130px;
+    color:white;
+    
+}
+
+.app-text{
+    width:50%;
+    float:left;
+}
+
+.app-text h1{
+    font-size:43px;
+    width:640px;
+    position:relative;
+    margin-left:40px;
+}
+
+.app-text p{
+    width:650px;
+    font-size:15px;
+    margin:30px 0 30px 40px;
+    line-height:25px;
+    color:#919191;
+}
+
+.app-picture{
+    width:50%;
+    float:right;
+}
+
+.app-picture img{
+    width:100%;
+    margin-top:-20px;
+    padding-left:50px;
+
+    
+}
+
+.play-btn{
+    display: inline-flex;
+    margin-left:40px;
+
+}
+
+.play-btn-inner img{
+    height:50px;
+    width:50px;
+    border:5px solid transparent;
+    border-radius: 50%;
+    background-image:linear-gradient( #42455a,#42455a),radial-gradient(circle at top left,#fd00da,#19d7fa);
+    background-origin:border-box;
+    background-clip:content-box,border-box;
+    text-align: center;
+    font-size:13px;
+    cursor:pointer;
+
+}
+
+small{
+    margin:auto 20px;
+    cursor:pointer;
+    font-size:12px;
+    color:#19dafa;
+    letter-spacing:3px;
+
+}
+
+
+
+
+

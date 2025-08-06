@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this is another html file</title>
+</head>
+
+<style>
+    body{
+        background:linear-gradient(rgba(0, 0, 0, 0.721),rgba(0, 0, 0, 0.726)),url(2.png);
+        background-size:cover;
+
+    }
+
+    .container{
+        height:200px;
+        width: 100%;
+        position:fixed;
+        left:0;
+        right:0;
+        top:0;
+        z-index:1111;
+        background-color: purple;
+        border:3px solid seagreen
+    }
+
+    .finished #bankai  li{
+        color:aqua;
+        display:inline-block;
+        padding:74px 30px;
+        font-size: 25px;
+        transition:0.5s ease
+    }
+
+    .finished #bankai li:hover{
+        color:orange
+
+    }
+
+   .finished ul li {position:relative}
+
+   a{color:aqua}
+
+    .finished ul li a::after{
+        content: '-- ';
+        color:yellow;
+        height:3px;
+        position:absolute;
+        left:3px;
+        bottom:0px; 
+    }      
+
+    
+</style>
+<body>
+
+    <div class="container">
+        <div class="finished">
+            <ul id = 'bankai'>
+                <li><a href="">Home </a></li>       
+                <li><a href="">About me</a></li>
+                <li><a href="">Adress</a></li>
+                <li><a href="">Query</a></ul>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>

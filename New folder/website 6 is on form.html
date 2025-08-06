@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to create a form  with password strenght using html and css</title>
+    <link rel="stylesheet" href="website 6 is on form.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">   <!-- link under href can be found under website bootstrap cdn,just type font awesome cdn in browser-->
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="jquery.passwordstrength.js"></script>
+</head>
+<body>
+
+    <form>
+        <img src="user-circle-regular-24.png" class="image" alt="">
+         <div class="inputbox">
+            <span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAA7xJREFUSEvFl3fIj2sYxz/IHp2yZcXhhMimKBIiK1mHhMg4ji0kOyMroyQzf8geGQkndLJHiMieiZAie7u/uh7dv9vveZ+fv1z1ej33te5rfa/7zcZvomy/yS+/6jg7UB+oAJSySz8EbgGnga+ZBpKp47+A4UBnoGiM8afAZmARcDPpAkmOCwPLgU5Jhjy+ot4CDAaexell5bgccAD405RlcDdw1vsRq4791APawI/yXQVaAA/SOY9zrHSeA0qb0n3gb+BEQuSNgPVAWU9PF3oS6qVznBM4ak0k+TXAMOCVKecDWlmDSf86sA94b/wCwBKgt32fdJlrDHz2nadzPBsYZ0Jy2tdTUPr3uBpWCyK4AHQA7nnn0u1j3zOBiVk5VorUkYpa6a0KvDaFXMA1oHxMum+bfBR5IeCKjd1HoJJ/sTDihcAIM6x6HfecTAMmu5t/AoYAG42nqKQnW5OAGZ5OM+CgfS8ARkc837H+/wgo7rrzjFfjSPYiUN3dfJ3LSs8g6k1AV+v2ugHvPFDTMqhSfSffsRrgiJ0LBEYGBt4BuYFZwISAp7PxLqKXgFLskxrtXztoYAiX4lidu9gEugBbAwOXrYZrgV4BT1no4ZDtkmXFZ3e3EdPZP8CyMGJ13XTTKJIGdYRgA2ys1On/maxGSx2cF1jqRRc5V8NG3a5pmRs6VmrVACItANXbp4KAoi4TnEefd4Ealm5fpKS7sBaJaJQ1YkqqlV6BvKitzWvoQ0ZWGjT6vG0uQ0PTXDayJagVaclINsVxQw8SNTZR2tMFWNmhW3Nj7HUodScmCzqe4v6ZanytVE1MiuM8rviPrSt3AB0DY9rFaiDNt0BENRW9dQilNB8GNFZfAr1dbszaOXx4bqP6IXSs79UGkRodgbu6VCTUUWQVs4hMrBtAa3sY6Fvze8qNoFBvhSvFwEg/RK4mwP/G1FqrDWgnaxUWs3PdWGASQWl+ayoZF2kT1XI48MLht8BDlxYJJ47FOdb5TrcS25uAbqmGUqpEgjyNjDLik8okHJhjh2oglSBCuO3hYyLddvrDIgrHRnM8KCHVq4B+gYxmWFArVPtBcQ+BKsAhhzIlPFl1cQT4cf5bAvs9prBA5VPtUyirp48aSfWOXiFa5CqDUEqG9KTJYWAj2f5WEnW/SJE2tY7/6aJJjz29NgRzY7zxScj299rOs3q/iRNOchzpKer5brF3S/C6ARgb98DLpMZx9oXXesxrr+q3SC8PAYh+R++ypKz88l8SiQYzFcg01Znay1juGzC8sh8i2SWvAAAAAElFTkSuQmCC"/></span>
+            <input type="text " placeholder="User Name" required>
+         </div>
+
+         <div class="inputbox">
+            <span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAa9JREFUSEvtlj8oRXEUxz9PSmKxWFgU2chEmWws2CySTRZKkpB/IUmKRTbJYsNAJpNiEpsoC4vFQlLCPa9z6/Trve6fd3nKe3V7t3PP7/s559zfueeXIk+/VJ64FMC/Vnm31JPAIFCVcASPwCaw6OtacAdwlDDQlWsHTsRowZLtgnq+AmUJBWG1hLHkgmc8w6zCaoBdoDVH+BnQC9yrzpzPsBlbsNjlGtYISyMG8AZMAOvAl14ikREs2QrcrUStZt8cEn6hWd4Zf4GHAu8DA8CTLigCRoF5oCRLAO/ANLDq/X+qTyWwBXSHBYvfMzACbBtQPbAHNDrwK6AHuDH2fmDNK3eFsQWW2uqeAn3AgxqLgXHNTkxShWXgQ59XAztAW4bKRALL+hdPeArYMBulQYWvzb4Y0pYsz/I6IoN9nXPN/tYRrtMsWwI2YGyw6MomEoEVhYxpN2TbdDaWnMC+0KXeNIVss1DtFEErkmsiGUciRunjOMJBa/5WxnYsBkUe97l8C9KHATudOoGDuIoh13UBhy5YBoF80OUk8hNHn2MdPOkBUjjehnxVubv9v1J/AzG/WB9938PnAAAAAElFTkSuQmCC"/></span>
+            <input type="email " placeholder=" Email ID" required>
+         </div>
+
+         <div class="inputbox">
+            <span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAhBJREFUSEvl1kuoT1EUx/HPHZkoUuQReeYtJsoAAwZiaqIUEwMTE4xEIUYyMbhIYqKMDE2UV8JI8iqPPMqAsbfCWbXv7XQ65/z//31u3YFd/8F/P9Z3r73W+q0zZJzG0DhxjSV4NtZgMd7gEd42OTYW4Jm4jM01kIfYWfxeV9e6ggN2DRNbQvaz8HwXrpb3dAHPwHNMLhm8kZ54GbaV5gO+BO9G5nLBce4WNpSMHyw8P1X6vwfnGM2je1iPv7EnFxy3f1F53iM4Xpk7jGOlueXplbLBW3C9Jq4ncag0H469woI0t3XkXK7HO3ClIaFOY39pLfbF/hi7UwVke7wxxbgpmc9gXwpl2eN1eNAlxvOTSLQJ33l8LOBH06Y/qey+54Kn4z7mDii3Z7E3t5wCehcLB4R+QNT21xxwQKN2Q4sHGS+xHU9ylGsa7gwIDe+GEbX8o3rTfsppKm4XWru0xc3oRpswC2uTSNwsavp305le4ICGgVCc6viFiynJImlGdbifOLSBp6SYrmww9Awr+oHU7WkCBzQ8XdVi+EJRp9EIskYdeFLydHWDxQP4nPrwlyxqQ3e6lBp3k814+qe5wLY6flzzxN9S8oSnkb0hf51G3VNHzU2oWB0R/U6wNgGZg/c11hfVfbB1uUXV41CoTyWD0V1CfU50gfRbTvMQwhEfctlZ2+uivZSr1/ns9f8P/A/vQFUfaa2UzAAAAABJRU5ErkJggg=="/></span>
+            <input type="password " id="password" placeholder="password" required>
+         </div>
+
+         <button type="submit"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAA1NJREFUSEvFlmfIjlEYx39vyMosGZEPSllZoZQ9kmQlklH2zDeZGfki+WDPjDLyBVFCRkZIUTIzkojskcgonP/bdXSe476f+3mf0nvV2/Pe5zrX+Z9r/K/rlFBOUlJOuBQD3A5oDjQEqgIvgGfAJeBHoY4UCtwYmAWMBpqmHP4FOAzsAM5lXSALuAqwDpgAVMw6LNBfBaYAt9Js8gHXBk4CnQPjs4AOvQbcAN4BHe2vAzDEwi+Tj27fIEvBP/hpwMrdFRe6tmbx3jw4lOF1M2Af0MX2fQP6JoGnAStXQ834hIX6ZYGhrgDMd3uXWXpeA+2tCP8ekQQ81VXsVttxwRVKT+A30AmongCuSn4ECCCUmcBGW1CK+oTKGLgm8ASoA6hKWwJPzeA20CqP16eAccCrYM8ZoLd9K/9HvS4GFmU2mHKyUcPvzQLWvtizRsADi9R5i17peTGwDHsBnwF5H4oHVviXBopqwCKgq60pHV8D/XZATihd9YwJOcB1gbd2mePAwBTgg8CISDcd2GxrquzHgX5iELlpwLbYY+VCOZEsAVYU4fFPoAbwPbBtAdy1b11ORZfjsegjGkn6AadTgKPlnM/1wJyEDZ8sdXtcNMbHwAMc8RXiYoA/OCastSj9SgBWF6sF7LaekOOxWt51M5oLrM4ItbraGtuj6ChKSdIkoORKl4YFsccaCKpmDQO1vbEpwGFx6f/htk9FtCsBebDrXEdsfYwbqftjYH2LKt2AO0DrAoDFhIdugulXedScjjuYqKf2Kanv9TGPVc3LU/LseRzTaRRwwGyO2UTyd9aEuwc0cBSUfRuviIHVacTBysZpUUHclqQBSxeGXI+F8CK+H8xwF9iSBqx1hcV3JhVN/2hIvLFUhJmQZ3oSSVTBmtVqFh5IPFbq1L1KJWk6VTIOd7c9esaoKPS2KkRUnIvd+2shoLNUsJps90PjtHkszl0McqLCmQ3szUDWNBMjvPcamYqYBkSO5Hv6qNnvdO1uZGChkafK10H6fQ70MCboVwPfn6laGebodjPpslmPPdlMAlYZZQoJtfK4ySaWIpUohQDLUMUzz3KtTpQk/nmr7qQ+kFcKBQ4P8Q96UU/dTkWnV8rl//Ggz3KgzPpiPC4zSJLBH4eFsR80iZXXAAAAAElFTkSuQmCC" class="fa"/>Register</button>
+    </form>
+
+    <script type="text/javascript">
+        $(function(){
+            $("#password").passwordStrength()     
+           });
+
+    </script>
+    
+</body>
+</html>

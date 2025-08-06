@@ -1,0 +1,142 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family:'poppins','sans-serif'
+}
+
+.hero{
+    width:100%;
+    height:100vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.392),rgba(0, 0, 0, 0.392)),url('flowers.jpg');
+    background-size:cover;
+    background-position:center;
+    padding: 10px 10%;
+    overflow:hidden;
+}
+
+.hero2{
+    padding:10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width:140;
+    
+}
+
+.class2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ .class2 img{
+    height:200px;
+    border-radius:50%;
+    width:200px;
+    background-color: black;
+    
+ }
+
+ .class2 ul li{
+    display: inline-block;
+    padding:20px 30px;
+    list-style:none;
+    margin:10px 20px
+ }
+
+ .class2 ul li a{
+    text-decoration: none;
+    color:darkgreen;
+    font-size: 20px;
+    font-weight:600;
+
+ }
+
+ .btn1{
+    text-decoration: none;
+    font-weight: 600;
+    margin-right:15px;
+    color:darkgreen;
+    font-size:20px;
+
+ }
+
+ .btn2{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    color:darkgreen;
+    padding:0  10px;
+    background-image:linear-gradient(45deg,green,pink);
+    border-radius:30px;
+    border-top-right-radius:0;
+    transition: 1s ease;
+
+ }
+
+ .content{
+    display: inline-block;
+    margin-top:10%;
+    max-width: 600px;
+
+ }
+
+ .content h1{
+    font-size: 70px;
+    font-weight: 600;
+    color:purple;
+ }
+
+ .content p{
+    font-size: 30px;
+    font-weight: 400;
+    color:lightyellow;
+    padding-bottom:20px;
+ }
+
+ .content .btn2{
+    padding:15px 80px;
+    font-size: 20px;
+ }
+
+ .btn2:hover{
+    border-top-right-radius: 30px;
+    color:orangered;
+    
+ }
+
+ .feature-image{
+    width:530px;
+    position:absolute;
+    bottom:0;
+    right:10%;
+    background-color: transparent;
+    background-position: center;
+    background-size:cover;
+    padding:10px 10%;
+    overflow:hidden;
+    height:500px;
+    width:800px;
+    border-radius:50%
+
+ }
+
+ .anim{
+    opacity:0;
+    transform:translateY(30px);
+    animation:moveup 0.5s linear forwards;
+ }
+
+ .anim img{
+    opacity:0;
+    transform:translateY(30px);
+    animation:moveup 0.5s linear forwards;
+ }
+
+ @keyframes moveup{
+    100%{opacity:1;
+         transform:translateY(0px)};
+ }
