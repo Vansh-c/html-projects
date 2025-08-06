@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visibility and z-index</title>
+</head>
+       <style>
+          .box{height:200px;
+                width:200px;
+                border:3px solid black;}
+
+           #box1{background-color:red ;}
+           #box2{background-color: aqua;
+                   visibility:hidden ;}                   /*visibility:hidden : it basically hides the content and reserves the space */
+           #box3{background-color: yellow;
+                     position:relative;
+                      top:54px;
+                    z-index: 20;}               /*display:none: it generally removes the contentt and space reserved with it*/
+           
+           #box4{background-color: blueviolet;
+                  position:relative;
+                  top:14px;
+                  z-index: 30;}
+                                       /*note:visibility only works with position:absolute,relative,fixed and sticky positions*/
+                                    /*z-index: it increases height of class or ids whose z-index is higher than others*/  
+       </style>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+    
+</body>
+</html>

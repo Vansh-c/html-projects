@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = 'css/style.css'>
+    <style>
+        *{font-family:sans-serif;}
+        body{border:0px;
+               margin:0px;
+              background:url('Ichigo.jpg');
+            }
+              
+        .left{
+            border:4px solid rgb(95, 10, 78);
+            display:inline-block;
+            position:absolute;          /*using position absolute ,one can change postion of element relative to its parent posiion*/
+            top:20px;
+            left:34px;
+        }
+
+        .mid{display:block;
+            border:4px solid red;
+            width:33%;
+            margin: 15px auto;  
+        }
+           
+        .right{position:absolute;     /*postion:absolute - sets position of an element relative to its parent*/
+                top:20px;
+                right:34px;  
+            border:4px solid rgb(28, 26, 26);
+            display:inline-block;
+
+        }
+
+        .navbar{display: inline-block;}
+        li{display: inline-block;}
+        .navbar li a{color:rgb(12, 20, 16);
+                      text-decoration: none;     /*used to remove underline from the bottom of links*/
+                      padding:25px;}
+        .navbar li a:hover{color:blue;}
+
+        .left img{width: 150px;
+                   margin:auto;
+                   filter:invert(4%);
+                   display:inline-block;
+                   padding:10px;
+                   box-sizing:border-box;
+                }
+
+        .btn{box-sizing: border-box;
+              padding :10px;
+              color:blue;
+               background-color: aqua;
+              margin:20px }
+
+        .btn a:hover{color:red;
+               background-color: blueviolet;}
+        .btn:hover{background-color: rgb(53, 40, 65);}
+
+        .container{border:2px solid green ;
+                    padding :10px 10px;
+                    margin: 391px 10px;
+                    width : 33%;
+                   float:right;
+                   text-align:center;
+                   font-family:cursive;
+                   font-size: 30px;
+                 }
+        .bankai{float:right;
+                margin:50px -528px;
+                padding:10px 10px ; 
+                border:5px solid black;
+                box-sizing: border-box;
+                }
+        
+        .abc{padding:10px;
+             margin:auto;}
+     
+        .bankai button{margin:3px 74px;
+                       padding:3px 33px;}
+
+        .name{text-align: center;}
+        
+              
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- new box for logo -->
+        <div class="left">
+             <img src = 'd.jpg' alt = ''>
+             <div> Vansh's anime photos</div>
+        </div>
+        <!-- mid box for navbar -->
+
+        <div class="mid">
+           
+                <ul class="navbar">
+                   <li><a href = '#'>home</a></li>
+                   <li><a href = '#'>ichigo</a></li>
+                   <li><a href = '#'>anime </a></li>
+                   <li><a href="#">about</a></li>
+                </ul>
+        </div>
+
+        <!-- right box for buttons -->
+        
+        <div class="right">
+          <button class="btn"><a href = '#'>call us</a></button>
+          <button class="btn"><a href = '#'>any query</a></button>
+        </div>
+    </header>
+    <div class="container">
+        - by Vansh joshi
+    </div>
+
+
+    <div class="bankai">
+        <h1> are you interested?</h1>
+        <form action = 'backhend.php'>
+            <div class="abc">
+                name:<input type = 'text' class = 'name' placeholder="enter your name">
+            </div>
+            <div class="abc">
+                number:<input type = 'number' class = 'name' placeholder="enter your number">
+            </div>
+            <div class="abc">
+                email:<input type = 'text' class = 'name' placeholder="enter your email">
+            </div>
+            <div class="abc">
+                anime:<input type = 'text' class= 'name' placeholder="enter your fav anime">
+            </div>
+            <div class = 'dangai'>
+                <button class="btn">submit now</button>
+            </div>
+           
+        </form>
+    </div>
+    
+</body>
+</html>
